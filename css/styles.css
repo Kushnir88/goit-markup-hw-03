@@ -62,29 +62,61 @@ ul{
 }
 
 /*============================Header============================*/
+.header{
+  display: flex;
+  background-color: aqua;
+  justify-content: space-between;
+}
 .hero {
   background-color: var(--background-color);
   text-align: center;
+  justify-content:center
 }
 .hero-text {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
 }
+.nav{
+  display: flex;
+  margin-left: 156px ;
+}
+.site-nav {
+display: block;
+display: flex;
+background-color: yellow;
+margin-left: 76px;
+margin-top: 24px;
+margin-bottom: 24px;
+}
+
+.site-nav .list:not(:last-child)
+{
+  margin-right: 40px;
+}
+.address{
+  display: flex;
+  background-color:orangered;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
 .web-header {
+  margin-left: 156px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
-  display: flex;
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2e2f42;
+  background-color:greenyellow;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .header-item {
@@ -100,6 +132,7 @@ ul{
 }
 
 .tel {
+  margin-right: 150px;
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
@@ -107,6 +140,7 @@ ul{
   color: #434455;
 }
 .mail {
+  margin-right: 40px;
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
@@ -137,6 +171,12 @@ ul{
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
+.features{
+  background-color: yellow;
+}
+.doings{
+  background-color: coral;
+}
 
 /*============================Buttons============================*/
 .button-index {
@@ -144,12 +184,13 @@ ul{
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  display: flex;
   letter-spacing: 0.04em;
   color: #ffffff;
   background-color: #4d5ae5;
   cursor: pointer;
-  display: block
+  border-radius: 4px;
+  margin-top: 48px;
+  margin-bottom: 188px;
 }
 .button-index:hover,
 .button-index:focus {
