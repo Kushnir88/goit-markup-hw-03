@@ -11,13 +11,27 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--body-text-color);
 }
-h1, h2, h3, h4, h5 ,h6, p {
-margin: 0;
+.container{
+  width: 1128px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-ul{
-  margin: 0;
+h1, h2, h3, h4, h5, p {
+margin: 0;
+margin-bottom: 0;
+}
+ul, ol{
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 0;
-
+}
+img{
+  display: block;
+}
+button{
+  cursor: pointer;
 }
 .list {
   list-style: none;
@@ -65,29 +79,19 @@ ul{
 .header{
   display: flex;
   background-color: aqua;
-  justify-content: space-between;
 }
-.hero {
-  background-color: var(--background-color);
-  text-align: center;
-  justify-content:center
-}
-.hero-text {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  color: #ffffff;
+.header-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between
 }
 .nav{
   display: flex;
-  margin-left: 156px ;
 }
 .site-nav {
 display: block;
 display: flex;
 background-color: yellow;
-margin-left: 76px;
 margin-top: 24px;
 margin-bottom: 24px;
 }
@@ -96,15 +100,8 @@ margin-bottom: 24px;
 {
   margin-right: 40px;
 }
-.address{
-  display: flex;
-  background-color:orangered;
-  margin-top: 24px;
-  margin-bottom: 24px;
-}
 
 .web-header {
-  margin-left: 156px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -117,6 +114,7 @@ margin-bottom: 24px;
   background-color:greenyellow;
   margin-top: 24px;
   margin-bottom: 24px;
+  margin-right: 76px;
 }
 
 .header-item {
@@ -130,9 +128,14 @@ margin-bottom: 24px;
 .header-item:focus {
   color: var(--link-color);
 }
-
+.address{
+  display: flex;
+  background-color:orangered;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
 .tel {
-  margin-right: 150px;
+  margin-left: 40px;
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
@@ -140,7 +143,7 @@ margin-bottom: 24px;
   color: #434455;
 }
 .mail {
-  margin-right: 40px;
+  margin-left: ;
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
@@ -156,8 +159,24 @@ margin-bottom: 24px;
   color: var(--link-color);
 }
 /*============================Sections============================*/
-.section{
+.hero {
+  background-color: var(--background-color);
+  text-align: center;
+  justify-content:center
+}
+.hero-text {
+  max-width: 494px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 188px;
 
+  text-align: center;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  background-color: teal;
 }
 .our-team {
   background-color: #f4f4fd;
