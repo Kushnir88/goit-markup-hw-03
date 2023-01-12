@@ -11,26 +11,11 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--body-text-color);
 }
-.container{
-  width: 1128px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-h1, h2, h3, h4, h5, p {
-margin: 0;
-margin-bottom: 0;
-}
-ul, ol{
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-img{
+/*============================Utility============================*/
+img {
   display: block;
 }
-button{
+button {
   cursor: pointer;
 }
 .list {
@@ -46,6 +31,30 @@ button{
 .accent {
   color: #4d5ae5;
 }
+
+.container {
+  width: 1128px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -53,7 +62,6 @@ button{
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -76,32 +84,40 @@ button{
 }
 
 /*============================Header============================*/
-.header{
+.header {
   display: flex;
   background-color: aqua;
 }
-.header-container{
+.header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between
+  justify-content: space-between;
 }
-.nav{
+.nav {
   display: flex;
 }
 .site-nav {
-display: block;
-display: flex;
-background-color: yellow;
-margin-top: 24px;
-margin-bottom: 24px;
+  display: block;
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 24px;
+
+  background-color: yellow;
 }
 
-.site-nav .list:not(:last-child)
-{
+.site-nav .list:not(:last-child) {
   margin-right: 40px;
 }
 
 .web-header {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-right: 76px;
+  display: block;
+
+  background-color: greenyellow;
+  color: #2e2f42;
+
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -110,11 +126,6 @@ margin-bottom: 24px;
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #2e2f42;
-  background-color:greenyellow;
-  margin-top: 24px;
-  margin-bottom: 24px;
-  margin-right: 76px;
 }
 
 .header-item {
@@ -128,27 +139,28 @@ margin-bottom: 24px;
 .header-item:focus {
   color: var(--link-color);
 }
-.address{
+.address {
   display: flex;
-  background-color:orangered;
+  background-color: orangered;
   margin-top: 24px;
   margin-bottom: 24px;
 }
 .tel {
   margin-left: 40px;
+
+  color: #434455;
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
 }
 .mail {
-  margin-left: ;
+  color: #434455;
+
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
 }
 .tel:hover,
 .tel:focus {
@@ -162,21 +174,19 @@ margin-bottom: 24px;
 .hero {
   background-color: var(--background-color);
   text-align: center;
-  justify-content:center
+  justify-content: center;
 }
 .hero-text {
-  max-width: 494px;
   align-items: center;
-  flex-wrap: wrap;
   padding-top: 188px;
+  color: #ffffff;
+  background-color: teal;
 
   text-align: center;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  color: #ffffff;
-  background-color: teal;
 }
 .our-team {
   background-color: #f4f4fd;
@@ -190,26 +200,28 @@ margin-bottom: 24px;
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
-.features{
+.features {
   background-color: yellow;
 }
-.doings{
+.doings {
   background-color: coral;
 }
 
 /*============================Buttons============================*/
 .button-index {
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 48px;
+  margin-bottom: 188px;
+
+  color: #ffffff;
+  background-color: #4d5ae5;
+
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #ffffff;
-  background-color: #4d5ae5;
-  cursor: pointer;
-  border-radius: 4px;
-  margin-top: 48px;
-  margin-bottom: 188px;
 }
 .button-index:hover,
 .button-index:focus {
@@ -217,15 +229,17 @@ margin-bottom: 24px;
   background-color: #404bbf;
 }
 .button-portfolio {
+  cursor: pointer;
+
+  color: #4d5ae5;
+  background-color: #e7e9fc;
+
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
-  color: #4d5ae5;
-  background-color: #e7e9fc;
-  cursor: pointer;
 }
 .button-portfolio:hover {
   color: #e7e9fc;
@@ -240,6 +254,8 @@ margin-bottom: 24px;
   background-color: var(--background-color);
 }
 .web-footer {
+  color: #f4f4fd;
+
   font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -249,12 +265,11 @@ margin-bottom: 24px;
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #f4f4fd;
 }
 .footer-text {
-  
+  color: #e7e9fc;
+
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #e7e9fc;
 }
