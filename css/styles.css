@@ -7,6 +7,11 @@
   --link-color: #404bbf;
   --subtitle-color: #434455;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
   font-family: "Roboto", sans-serif;
   color: var(--body-text-color);
@@ -33,9 +38,8 @@ button {
 }
 
 .container {
-  width: 1128px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 1158px;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -175,10 +179,10 @@ ol {
   background-color: var(--background-color);
   text-align: center;
   justify-content: center;
+  align-items: center;
 }
 .hero-text {
-  align-items: center;
-  padding-top: 188px;
+  width: 494px;
   color: #ffffff;
   background-color: teal;
 
@@ -188,9 +192,7 @@ ol {
   line-height: 1.07;
   letter-spacing: 0.02em;
 }
-.our-team {
-  background-color: #f4f4fd;
-}
+
 
 .section-text {
   font-weight: 700;
@@ -200,13 +202,66 @@ ol {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
-.features {
+.feature {
   background-color: yellow;
+  margin-top: 126px;
+}
+.feature-list {
+display: flex;
+flex-wrap: wrap;
+}
+.feature-list .item {
+  width: calc((100% - 72px) / 4) ;
+  background-color: aqua;
+}
+.feature-list .item:not(:last-child){
+  margin-right: 24px;
 }
 .doings {
   background-color: coral;
+  margin-top: 114px;
 }
-
+.doings-list{
+display: flex;
+flex-wrap: wrap;
+margin-top: 72px;
+}
+.doings-list .item{
+width: calc((100% - 48px) / 3);
+margin-right: 24px;
+}
+.doings-list .item:nth-child(3n) {
+  margin-right: 0;
+}
+.our-team {
+  background-color: #f4f4fd;
+  margin-top: 120px;
+  padding-top: 120px;
+}
+.our-team-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 72px;
+}
+.our-team-list .item{
+  width: calc((100% - 72px) / 4);
+  margin-right: 24px;
+  margin-bottom: 120px;
+  text-align: center;
+}
+.our-team-list .item:nth-child(4n) {
+  margin-right: 0;
+}
+.team-text-suptitle{
+padding-top: 32px;
+padding-bottom: 4px;
+background-color:  white;
+}
+.team-text-subtitle{
+  padding-top: 4px;
+  padding-bottom: 32px;
+  background-color: white;
+}
 /*============================Buttons============================*/
 .button-index {
   cursor: pointer;
@@ -254,6 +309,7 @@ ol {
   background-color: var(--background-color);
 }
 .web-footer {
+  padding-top: 100px;
   color: #f4f4fd;
 
   font-family: Raleway, sans-serif;
@@ -267,6 +323,10 @@ ol {
   text-transform: uppercase;
 }
 .footer-text {
+  flex-wrap: wrap;
+  width: 264px;
+  margin-top: 16px;
+  padding-bottom: 96px;
   color: #e7e9fc;
 
   font-size: 16px;
