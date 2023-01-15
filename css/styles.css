@@ -95,9 +95,8 @@ ol {
 
 /*============================Header============================*/
 .page-header {
-  display: flex;
-  align-items: center;
-  background-color: aqua;
+  
+  /* background-color: aqua; */
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -112,14 +111,15 @@ ol {
 .site-nav .item {
   display: block;
   margin-right: 40px;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 .site-nav .item:last-child {
   margin-right: 0;
 }
 
 .web-header {
-  background-color: greenyellow;
+  margin-right: 76px;
+  /* background-color: greenyellow; */
   color: #2e2f42;
 
   font-family: "Raleway", sans-serif;
@@ -147,19 +147,24 @@ ol {
 .header-item:focus {
   color: var(--link-color);
 }
+.header-container{
+  display: flex;
+  justify-content: space-between;
+}
 .address-nav {
   display: flex;
   padding-top: 24px;
   padding-bottom: 24px;
 }
 .address-nav .item {
+  display: flex;
   display: block;
 }
 .address-nav .item + .item {
   margin-left: 40px;
 }
 .tel {
-  background-color: red;
+  /* background-color: red; */
   color: #434455;
   font-style: normal;
   font-size: 16px;
@@ -167,7 +172,7 @@ ol {
   letter-spacing: 0.02em;
 }
 .mail {
-  background-color: red;
+  /* background-color: red; */
   color: #434455;
 
   font-style: normal;
@@ -186,7 +191,7 @@ ol {
 /*============================Sections============================*/
 .section {
   padding-bottom: 120px;
-  background-color: violet;
+  /* background-color: violet; */
 }
 .hero {
   background-color: var(--background-color);
@@ -199,7 +204,7 @@ ol {
   width: 496px;
 
   color: #ffffff;
-  background-color: teal;
+  /* background-color: teal; */
 
   text-align: center;
   font-weight: 700;
@@ -217,7 +222,7 @@ ol {
   text-transform: capitalize;
 }
 .feature {
-  background-color: yellow;
+  /* background-color: yellow; */
   padding-top: 126px;
   padding-bottom: 126px;
 }
@@ -227,11 +232,11 @@ ol {
 }
 .feature-list .item {
   width: 1128px;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .doings {
-  background-color: coral;
+  /* background-color: coral; */
   padding-bottom: 114px;
 }
 .doings-list {
@@ -240,8 +245,8 @@ ol {
   padding-top: 72px;
 }
 .doings-list .item {
-  /* width: calc((100% - 48px) / 3); */
-}
+
+  }
 
 .our-team {
   background-color: #f4f4fd;
@@ -267,7 +272,7 @@ ol {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  padding-top: 48px;
+
 }
 
 .project-card-content {
@@ -324,7 +329,7 @@ ol {
   justify-content: center;
   gap: 24px;
   padding-top: 97px;
-  padding-bottom: 23px;
+  padding-bottom: 71px;
 }
 /*============================Footer============================*/
 .footer {
