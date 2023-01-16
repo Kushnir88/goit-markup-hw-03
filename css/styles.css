@@ -78,6 +78,8 @@ ol {
   overflow: hidden;
 }
 .suptitle {
+padding-bottom: 8px;
+
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -191,12 +193,14 @@ ol {
 /*============================Sections============================*/
 .section {
   padding-bottom: 120px;
+  padding-top: 120px;
   /* background-color: violet; */
 }
 .hero {
   background-color: var(--background-color);
   text-align: center;
   padding-top: 188px;
+  padding-bottom: 188px;
 }
 .hero-text {
   margin-left: auto;
@@ -266,6 +270,7 @@ ol {
   padding-top: 32px;
   padding-bottom: 32px;
   border: 1px solid #e7e9fc;
+  background-color: #fff;
 }
 
 .project-card {
@@ -287,7 +292,8 @@ ol {
   cursor: pointer;
   border-radius: 4px;
   margin-top: 48px;
-  margin-bottom: 188px;
+  padding: 16px 32px;
+  border-color: #4d5ae5;
 
   color: #ffffff;
   background-color: #4d5ae5;
@@ -305,9 +311,13 @@ ol {
 }
 .button-portfolio {
   cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+
 
   color: #4d5ae5;
-  background-color: #e7e9fc;
+  background-color:#F4F4FD;
 
   font-family: inherit;
   font-size: 16px;
@@ -328,8 +338,7 @@ ol {
   display: flex;
   justify-content: center;
   gap: 24px;
-  padding-top: 97px;
-  padding-bottom: 71px;
+  margin-bottom: 71px;
 }
 /*============================Footer============================*/
 .footer {
@@ -354,7 +363,7 @@ ol {
   width: 264px;
   padding-top: 16px;
   padding-bottom: 100px;
-  margin-left: 16px;
+
   color: #e7e9fc;
 
   font-size: 16px;
